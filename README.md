@@ -68,14 +68,12 @@ CopyEdit
 
 Create a `.env` file with the following keys:
 
-env
-
-CopyEdit
-
-`OPENAI_API_KEY=your_openai_key
+```env
+OPENAI_API_KEY=your_openai_key
 GOOGLE_CLIENT_ID=xxx
 GOOGLE_CLIENT_SECRET=xxx
-GOOGLE_REFRESH_TOKEN=xxx`
+GOOGLE_REFRESH_TOKEN=xxx
+
 
 > Note: Use OAuth2 for Google API access to Gmail, Calendar, and Drive. Set up scopes and consent screen in the Google Cloud Console.
 
