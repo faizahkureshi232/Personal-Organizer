@@ -1,7 +1,7 @@
 🧠 Smart Personal Organizer & Life Assistant
 ============================================
 
-A full-stack AI-powered productivity assistant that leverages LangChain agents, OpenAI GPT-4, Google APIs (Gmail, Calendar, Drive), OCR, and vector search to:
+A full-stack AI-powered productivity assistant that leverages LangChain agents, Ollama llama3.2, Google APIs (Gmail, Calendar, Drive), OCR, and vector search to:
 
 -   Summarize emails, PDFs, and DOCX files
 
@@ -66,10 +66,34 @@ smart-assistant/
 Create a `.env` file with the following keys:
 
 ```env
-OPENAI_API_KEY=your_openai_key
+
+# === GOOGLE API CONFIGURATION ===
 GOOGLE_CLIENT_ID=xxx
 GOOGLE_CLIENT_SECRET=xxx
 GOOGLE_REFRESH_TOKEN=xxx
+GMAIL_SCOPES=xxx
+CALENDAR_SCOPES=xxx
+DRIVE_SCOPES=xxx
+GOOGLE_TOKEN_URI=xxx
+
+# === LANGCHAIN CONFIG ===
+LANGSMITH_TRACING=true
+LANGSMITH_ENDPOINT=xxx
+LANGSMITH_API_KEY=xxx
+LANGSMITH_PROJECT="SmartOrganizer"
+
+# === FRONTEND / BACKEND CONFIG ===
+
+# Backend server port
+BACKEND_PORT=8000
+
+# Frontend streamlit port (if separate)
+FRONTEND_PORT=8501
+
+
+# === DEBUG / LOGGING SETTINGS ===
+DEBUG=true
+LOG_LEVEL=INFO
 ```
 
 > Note: Use OAuth2 for Google API access to Gmail, Calendar, and Drive. Set up scopes and consent screen in the Google Cloud Console.
@@ -95,11 +119,10 @@ APIs served at `http://localhost:8000`.
 
 * * * * *
 
-### 4\. 🖼️ Run Streamlit Frontend
+### 4\. 🖼️ Run the Project
 
 ```env
-cd frontend
-streamlit run app.py
+./start_project.sh    
 ```
 
 * * * * *
@@ -117,7 +140,7 @@ streamlit run app.py
 
     -   `parser.py`: Parses PDFs, DOCX, OCR with pytesseract if needed
 
-    -   `summarizer.py`: Sends parsed text to OpenAI GPT-4 to generate summary
+    -   `summarizer.py`: Sends parsed text to Ollama llama 3.2 to generate summary
 
     -   `extractor.py`: Extracts action items using task-oriented prompt
 
@@ -192,7 +215,7 @@ streamlit run app.py
 
     -   `parse_document()`: Extract content from uploads
 
-    -   `summarize(text)`: OpenAI summarizer
+    -   `summarize(text)`: Ollama summarizer
 
     -   `extract_tasks(summary)`: Pull out action items
 
@@ -209,7 +232,7 @@ streamlit run app.py
 
 | Layer | Technology |
 | --- | --- |
-| LLM Engine | OpenAI GPT-4 |
+| LLM Engine | Ollama llama 3.2 |
 | Orchestration | LangChain Agents |
 | Backend | FastAPI |
 | Frontend | Streamlit |
