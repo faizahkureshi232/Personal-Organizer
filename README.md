@@ -22,7 +22,8 @@ graphql
 
 CopyEdit
 
-`smart-assistant/
+```gql
+smart-assistant/
 │
 ├── backend/
 │   ├── main.py                    # FastAPI server entry point
@@ -58,7 +59,7 @@ CopyEdit
 ├── .env                           # API keys and OAuth2 credentials
 ├── requirements.txt               # Python dependencies
 └── README.md                      # You are here`
-
+```
 * * * * *
 
 🚀 Setup & Run Instructions
