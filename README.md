@@ -82,10 +82,7 @@ GOOGLE_REFRESH_TOKEN=xxx
 ### 2\. 📦 Install Dependencies
 
 bash
-
-CopyEdit
-
-`pip install -r requirements.txt`
+```pip install -r requirements.txt```
 
 * * * * *
 
@@ -93,7 +90,6 @@ CopyEdit
 
 bash
 
-CopyEdit
 
 `cd backend
 uvicorn main:app --reload`
