@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+streamlit
+langchain
+openai
+PyPDF2
+python-docx
+pytesseract
+Pillow
+requests
+google-api-python-client
+google-auth
+google-auth-oauthlib

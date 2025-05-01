@@ -32,7 +32,7 @@ smart-assistant/
 │   │   ├── langchain_agent.py     # Tool-using agent with task-specific tools
 │   │   ├── tools.py               # Custom LangChain tools (PDF parser, task extractor, etc.)
 │   │   └── memory.py              # Memory management using ConversationBufferMemory
-│   ├── services/
+│   ├── service/
 │   │   ├── gmail_service.py       # Gmail API wrapper (OAuth2, read emails)
 │   │   ├── calendar_service.py    # Google Calendar API wrapper (create/update events)
 │   │   └── drive_service.py       # Google Drive file access

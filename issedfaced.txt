@@ -1,0 +1,5 @@
+1. redirect_uri_mismatch ---> put proper url in the  OAuth Client ID
+2. The app is currently being tested, and can only be accessed by developer-approved testers. If you think you should have access, contact the developer.
+   If you are a developer of Smart Life Organizer, see error details.   ---> add your emial in test in  OAuth consent screen->audiences->test
+3. backend.services.gmail_servies wastn found this is becayse my folder name was service and file name was service (avoid these types of error)
+4. couldn't import googleapiclient.discovery by streamlit because streamlit was installed in another env but not in my env thats why streamlitwas running but couldnt get any of the libs in that env.
