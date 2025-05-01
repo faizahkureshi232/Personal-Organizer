@@ -82,7 +82,9 @@ GOOGLE_REFRESH_TOKEN=xxx
 ### 2\. 📦 Install Dependencies
 
 bash
-```pip install -r requirements.txt```
+```env 
+pip install -r requirements.txt
+```
 
 * * * * *
 
@@ -91,8 +93,10 @@ bash
 bash
 
 
-`cd backend
-uvicorn main:app --reload`
+```env 
+cd backend
+uvicorn main:app --reload
+```
 
 APIs served at `http://localhost:8000`.
 
@@ -102,10 +106,11 @@ APIs served at `http://localhost:8000`.
 
 bash
 
-CopyEdit
 
-`cd frontend
-streamlit run app.py`
+```env
+cd frontend
+streamlit run app.py
+```
 
 * * * * *
 
@@ -229,12 +234,12 @@ streamlit run app.py`
 
 text
 
-CopyEdit
-
-`- "What did my boss email me last week?"
+```Markdown
+- "What did my boss email me last week?"
 - "Summarize this PDF and schedule all meetings inside."
 - "What tasks are due tomorrow?"
-- "What did I do on April 15th?"`
+- "What did I do on April 15th?"
+```
 
 * * * * *
 
