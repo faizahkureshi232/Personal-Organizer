@@ -18,10 +18,6 @@ A full-stack AI-powered productivity assistant that leverages LangChain agents, 
 🏗️ Project Structure
 ---------------------
 
-graphql
-
-CopyEdit
-
 ```gql
 smart-assistant/
 │
@@ -82,7 +78,6 @@ GOOGLE_REFRESH_TOKEN=xxx
 
 ### 2\. 📦 Install Dependencies
 
-bash
 ```env 
 pip install -r requirements.txt
 ```
@@ -90,9 +85,6 @@ pip install -r requirements.txt
 * * * * *
 
 ### 3\. 🖥️ Run FastAPI Backend
-
-bash
-
 
 ```env 
 cd backend
@@ -104,9 +96,6 @@ APIs served at `http://localhost:8000`.
 * * * * *
 
 ### 4\. 🖼️ Run Streamlit Frontend
-
-bash
-
 
 ```env
 cd frontend
