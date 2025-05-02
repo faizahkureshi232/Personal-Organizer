@@ -11,3 +11,6 @@ requests
 google-api-python-client
 google-auth
 google-auth-oauthlib
+dotenv
+langchain
+langchain_community

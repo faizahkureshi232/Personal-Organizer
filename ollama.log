@@ -1,0 +1,6 @@
+Couldn't find '/home/faizah.kureshi@corp.merillife.com/.ollama/id_ed25519'. Generating new private key.
+Your new public key is: 
+
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKF3BxgXky453eSwmMiogAaPo2Cup1bHu+5w/+urzRBx
+
+Error: listen tcp 127.0.0.1:11434: bind: address already in use
